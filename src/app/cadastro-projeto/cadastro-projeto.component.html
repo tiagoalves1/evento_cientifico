@@ -1,0 +1,11 @@
+<h1>CADASTRO PROJETO</h1>
+<p>EVENTOS</p>
+<ul>
+    <li *ngFor="let evento of eventos">
+        {{evento.nome}}
+    </li>
+</ul>
+<input [(ngModel)]="eventoNome" type="text"/>
+<p>NOME PROJETO</p>
+<input [(ngModel)]="nomeProjeto" type="text"/>
+<button (click)="addProjeto()">CADASTRAR</button>
